@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Yame</title>
+</head>
+<body>
+<div id="banner">
+  <a href=""> <img  id="logo"  src="logo.png" alt=""></a>
+  <a class="item" href="">Trang chủ</a>
+  <a class="item" href="">Áo</a>
+  <a class="item" href="">Quần</a>
+  <a class="icon" href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+  <a class="icon" href="http://localhost/Fanal1/signin.php"><span class="glyphicon glyphicon-user"></span></a>
+
+</div>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="jpg21.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="jpg22.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="jpg23.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<script>
+  let slideIndex = [1,1];
+  let slideId = ["mySlides1", "mySlides2"]
+  showSlides(1, 0);
+  showSlides(1, 1);
+
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex[no]-1].style.display = "block";
+  }
+</script>
+<div id="wrapper">
+  <ul class="products">
+    <li>
+      <div class="product-item2">
+        <div class="product-top">
+          <a class="product-item1" href="http://localhost/Fanal1/item.php">
+            <img src="Jpg1.jpg" alt="">
+          </a>
+          <a href="http://localhost/Fanal1/item.php" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo thun BBUFF</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"> <a class="product-item1" href="">
+          <img src="Jpg2.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo thun SPACE</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"> <a class="product-item1" href="">
+          <img src="Jpg3.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo thun SPACE</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"> <a class="product-item1" href="">
+          <img src="Jpg4.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo thun Y2010</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"> <a class="product-item1" href="">
+          <img src="Jpg5.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo thun VALKNAT</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg19.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo thun KHEPRI</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg20.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo thun SPACE</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg6.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần tây đen</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"> <a class="product-item1" href="">
+          <img src="Jpg7.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần jean xanh</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"> <a class="product-item1" href="">
+          <img src="Jpg8.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần tây xám</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top">  <a class="product-item1" href="">
+          <img src="Jpg9.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần jean</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg10.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần baggy</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"> <a class="product-item1" href="">
+          <img src="Jpg11.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a  >
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần short Y-Original</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg12.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần short classic</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg13.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần short Y-Original</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg14.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Quần short thun</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg15.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo sơ mi tay ngắn trắng</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg16.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo sơ mi tay ngắn đen</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg17.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo sơ mi trắng</p>
+      </div>
+    </li>
+    <li>
+      <div class="product-item2">
+        <div class="product-top"><a class="product-item1" href="">
+          <img src="Jpg18.jpg" alt="">
+        </a>
+          <a href="" class="buy-now">Mua ngay</a>
+        </div>
+
+      </div>
+      <div class="product-info">
+        <p class="product-name">Áo sơ mi đen</p>
+      </div>
+    </li>
+  </ul>
+
+</div>
+</body>
+</html>

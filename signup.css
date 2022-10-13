@@ -1,0 +1,68 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    background: url("backg.jpg");
+    background-position-x: -150px;
+}
+#banner{
+    background-color: black;
+
+}
+#banner a{
+    text-decoration: none;
+
+}
+#logo{
+    width: 11em;
+    padding-left: 50px;
+}
+.item {
+    color: white;
+    margin-left: 250px;
+    font-size: 30px;
+}
+.icon{
+    color: white;
+    float: right;
+    padding-right: 50px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+#wrapper{
+    display:flex;
+    position: absolute;
+    width: 517px;
+    height: 300px;
+    left: 500px;
+    top: 250px;
+
+}
+#form-register{
+    max-width: 400px;
+    height: 350px;
+    background: rgba(0,0,0,0.8 )  ;
+    flex-grow: 1;
+    box-shadow:0px 0px 20px 5px rgba(69, 66, 66, 0.8);
+
+}
+
+.form-dangky{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-input{
+
+    background: transparent;
+    width:100%;
+    border:0;
+    outline:0;
+    color:#f5f5f5;
+}
+
